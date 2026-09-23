@@ -1,6 +1,4 @@
-Zero-Clause BSD / Free Public License 1.0.0 (0BSD)
-
-Copyright (C) 2026 Albert Mulchausen <quownxhutw@gmail.com>
+Copyright (C) 2026 by Albert Mulchausen <quownxhutw@gmail.com>
 
 Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted.
 
