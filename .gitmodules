@@ -1,0 +1,6 @@
+[submodule "detent"]
+	path = detent
+	url = https://github.com/shorekeeper/detent
+[submodule "detent-omnirig"]
+	path = detent-omnirig
+	url = https://github.com/shorekeeper/detent-omnirig
