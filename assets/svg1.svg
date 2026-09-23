@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12121A"/>
+      <stop offset="0.55" stop-color="#0A0A0C"/>
+      <stop offset="1" stop-color="#07070A"/>
+    </linearGradient>
+
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0D1A47" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0D1A47" stop-opacity="0.75"/>
+    </linearGradient>
+
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#4DBFF2" stop-opacity="0.42"/>
+      <stop offset="0.45" stop-color="#1C6BC7" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#1C6BC7" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="carrier" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1C6BC7"/>
+      <stop offset="0.30" stop-color="#4DBFF2"/>
+      <stop offset="0.50" stop-color="#E8F7FF"/>
+      <stop offset="0.70" stop-color="#4DBFF2"/>
+      <stop offset="1" stop-color="#1C6BC7"/>
+    </linearGradient>
+
+    <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2F81F7" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#2F81F7" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="8" y="8" width="240" height="240" rx="48" fill="url(#panel)"/>
+
+  <rect x="8" y="120" width="240" height="128" rx="48" fill="url(#floor)"/>
+
+  <g stroke="#33333A" stroke-opacity="0.55" stroke-width="4">
+    <line x1="72" y1="112" x2="72" y2="236"/>
+    <line x1="184" y1="112" x2="184" y2="236"/>
+  </g>
+
+  <ellipse cx="128" cy="176" rx="62" ry="76" fill="url(#halo)"/>
+
+  <g fill="url(#carrier)">
+    <rect x="108" y="116" width="40" height="16" rx="8"/>
+    <rect x="108" y="148" width="40" height="48" rx="12"/>
+    <rect x="108" y="212" width="40" height="16" rx="8"/>
+  </g>
+
+  <path d="M 34 88 L 34 76 L 52 72 L 66 78 L 82 70 L 96 76 L 110 72
+           L 128 40 L 146 72 L 160 76 L 174 70 L 190 78 L 204 72 L 222 76
+           L 222 88 Z"
+        fill="url(#fill)"/>
+  <path d="M 34 76 L 52 72 L 66 78 L 82 70 L 96 76 L 110 72
+           L 128 40 L 146 72 L 160 76 L 174 70 L 190 78 L 204 72 L 222 76"
+        fill="none" stroke="#2F81F7" stroke-width="16"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="10" y="10" width="236" height="236" rx="47"
+        fill="none" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="4"/>
+</svg>

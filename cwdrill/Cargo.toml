@@ -1,0 +1,30 @@
+# An empty workspace table, because the source crate declares one and a
+# directory inside it would otherwise be refused as an unlisted member. This
+# crate has no members of its own: there is nothing to share.
+[workspace]
+
+[package]
+name = "cwdrill"
+version = "0.1.0"
+edition = "2021"
+description = "CWDrill: configurable Morse training"
+build = "build.rs"
+license = "0BSD"
+
+[dependencies]
+
+[lints.rust]
+unused_doc_comments = "allow"
+non_camel_case_types = "allow"
+non_upper_case_globals = "allow"
+
+[profile.dev]
+# The tone generator runs per sample even in a debug build, and an unoptimized
+# envelope is audible as a stutter rather than measurable as a slowdown.
+opt-level = 1
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+debug = 1

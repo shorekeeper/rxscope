@@ -1,0 +1,27 @@
+[workspace]
+members = [".", "detent", "detent-omnirig"]
+
+[package]
+name = "rxscope"
+version = "1.35.0"
+edition = "2021"
+description = "G90 Scope: Xiegu G90 CW decoder and RTTY class signal classifier"
+build = "build.rs"
+license = "0BSD"
+
+[dependencies]
+detent = { path = "detent" }
+
+[lints.rust]
+unused_doc_comments = "allow"
+non_camel_case_types = "allow"
+non_upper_case_globals = "allow"
+
+[profile.dev]
+opt-level = 1
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+debug = 1
